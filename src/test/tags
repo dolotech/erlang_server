@@ -1,0 +1,21 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+compare	.\tester.erl	/^compare([[L, T1, T2] | T], [_, TB1, TB2] = TB) ->$/;"	f	module:tester
+compare	.\tester.erl	/^compare([], _) ->$/;"	f	module:tester
+for	.\tester.erl	/^for(I, Max, F)   -> F(I), for(I + 1, Max, F).$/;"	f	module:tester
+for	.\tester.erl	/^for(Max, Max, F) -> F(Max);$/;"	f	module:tester
+get_us	.\tester.erl	/^get_us()->$/;"	f	module:tester
+ptimer	.\tester.erl	/^ptimer(Label, N, F)->$/;"	f	module:tester
+rand	.\tester.erl	/^rand(Min, Max)->$/;"	f	module:tester
+run	.\tester.erl	/^run(N, List) ->$/;"	f	module:tester
+sleep	.\tester.erl	/^sleep(T) ->$/;"	f	module:tester
+t1	.\tt.erl	/^t1(N)->$/;"	f	module:tt
+tester	.\tester.erl	/^-module(tester).$/;"	m
+timer	.\tester.erl	/^timer(Label, F, N) ->$/;"	f	module:tester
+timer	.\tester.erl	/^timer(Label, {sametime, F}, N) ->$/;"	f	module:tester
+tt	.\tt.erl	/^-module(tt).$/;"	m
+watch	.\tester.erl	/^watch(Runer, I, End) ->$/;"	f	module:tester
