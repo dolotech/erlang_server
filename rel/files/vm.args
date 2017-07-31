@@ -1,0 +1,39 @@
+## Name of the node
+-name myserver1@127.0.0.1
+
+## Cookie for distributed erlang
+-setcookie myserver0755
+
+## Heartbeat management; auto-restarts VM if it dies or becomes unresponsive
+## (Disabled by default..use with caution!)
+##-heart
+
+## Enable kernel poll and a few async threads
+##+K true
+##+A 5
+
+## Increase number of concurrent ports/sockets
+-env ERL_MAX_PORTS 102400
+
+## Tweak GC to run more often
+##-env ERL_FULLSWEEP_AFTER 10
+
+## warning as warning
++W w
+
+## Sets the maximum number of concurrent processes for this system. 
+## Number must be in the range 16..134217727. Default is 32768.
++P 409600
+
+## Enables or disables the kernel poll functionality if the emulator supports it. 
+## Default is false (disabled). 
+## If the emulator does not support kernel poll, 
+## and the +K flag is passed to the emulator, 
+## a warning is issued at startup.
++K true
+
+## starts the Erlang runtime system with SMP support enabled
+-smp enable
+
+-kernel inet_dist_listen_min 40001
+-kernel inet_dist_listen_max 40100
